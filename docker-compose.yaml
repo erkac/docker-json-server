@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+    json-backend:
+        build: .
+        ports:
+            - ${PORT:-80}:5000
+        restart: always
